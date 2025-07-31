@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Restaurant Scraper Initialization Script
+初期化スクリプト - SerenaMCP & Project Setup
+"""
+
+import os
+import sys
+import json
+import subprocess
+from datetime import datetime
+from pathlib import Path
+
+def print_banner():
+    """Print initialization banner"""
+    print("""
+╔═══════════════════════════════════════════════════════════╗
+║       飲食店営業リスト作成アプリ - 初期化スクリプト       ║
+║            Restaurant Scraper Initialization              ║
+╚═══════════════════════════════════════════════════════════╝
+    """)
+
+def check_environment():
+    """Check system environment"""
+    print("🔍 環境チェック中...")
+    
+    # Python version
+    version = sys.version_info
+    print(f"  Python: {version.major}.{version.minor}.{version.micro}")
+    
+    if version.major < 3 or (version.major == 3 and version.minor < 8):
+        print("  ❌ Python 3.8以上が必要です")
+        return False
+    
+    # Check if in correct directory
+    cwd = Path.cwd()
+    if not (cwd / "restaurant_scraper_app.py").exists():
+        print("  ❌ restaurant_scraper_app.pyが見つかりません")
+        print("  正しいディレクトリで実行してください")
+        return False
+    
+    print("  ✅ 環境チェック完了")
+    return True
+
+def install_dependencies():
+    """Install dependencies"""
+    print("\n📦 依存関係のインストール...")
+    
+    if (Path.cwd() / "setup.py").exists():
+        result = subprocess.run([sys.executable, "setup.py"], capture_output=True, text=True)
+        if result.returncode == 0:
+            print("  ✅ 依存関係のインストール完了")
+            return True
+        else:
+            print("  ❌ インストール中にエラーが発生しました")
+            print(result.stderr)
+            return False
+    else:
+        print("  ❌ setup.pyが見つかりません")
+        return False
+
+def create_directories():
+    """Create necessary directories"""
+    print("\n📁 ディレクトリ構造の作成...")
+    
+    dirs = [
+        ".serena",
+        "logs",
+        "output",
+        "cache"
+    ]
+    
+    for dir_name in dirs:
+        dir_path = Path.cwd() / dir_name
+        if not dir_path.exists():
+            dir_path.mkdir(exist_ok=True)
+            print(f"  ✅ {dir_name}/ を作成しました")
+        else:
+            print(f"  ℹ️  {dir_name}/ は既に存在します")
+
+def create_config_files():
+    """Create configuration files"""
+    print("\n⚙️  設定ファイルの作成...")
+    
+    # Create .gitignore if not exists
+    gitignore_path = Path.cwd() / ".gitignore"
+    if not gitignore_path.exists():
+        gitignore_content = """# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+
+# Logs
+*.log
+logs/
+
+# Output
+output/
+*.xlsx
+*.csv
+
+# Cache
+cache/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# SerenaMCP
+.serena/cache/
+"""
+        with open(gitignore_path, 'w') as f:
+            f.write(gitignore_content)
+        print("  ✅ .gitignoreを作成しました")
+    
+    # Create sample .env
+    env_sample_path = Path.cwd() / ".env.sample"
+    if not env_sample_path.exists():
+        env_content = """# Restaurant Scraper Environment Variables
+# Copy to .env and fill in your values
+
+# HotPepper API Key (optional)
+HOTPEPPER_API_KEY=
+
+# Default settings
+DEFAULT_AREA=東京都
+MAX_RESTAURANTS_PER_AREA=100
+OUTPUT_FILENAME=restaurant_list.xlsx
+
+# Scraping settings
+TABELOG_DELAY_MIN=2
+TABELOG_DELAY_MAX=4
+USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=logs/restaurant_scraper.log
+"""
+        with open(env_sample_path, 'w') as f:
+            f.write(env_content)
+        print("  ✅ .env.sampleを作成しました")
+
+def create_quick_start_script():
+    """Create quick start script"""
+    print("\n🚀 クイックスタートスクリプトの作成...")
+    
+    script_path = Path.cwd() / "run.sh"
+    script_content = """#!/bin/bash
+
+# Restaurant Scraper Quick Start Script
+
+echo "🍽️ 飲食店営業リスト作成アプリ"
+echo "================================"
+echo ""
+
+# Check if Python is installed
+if ! command -v python3 &> /dev/null; then
+    echo "❌ Python3がインストールされていません"
+    exit 1
+fi
+
+# Run in interactive mode by default
+python3 restaurant_scraper_app.py -i
+"""
+    
+    with open(script_path, 'w') as f:
+        f.write(script_content)
+    
+    # Make executable
+    os.chmod(script_path, 0o755)
+    print("  ✅ run.shを作成しました")
+
+def test_application():
+    """Test basic application functionality"""
+    print("\n🧪 アプリケーションのテスト...")
+    
+    try:
+        # Import test
+        sys.path.insert(0, str(Path.cwd()))
+        from restaurant_scraper_app import RestaurantScraperApp
+        from hotpepper_api_client import HotpepperAPIClient
+        from tabelog_scraper_improved import TabelogScraperImproved
+        from restaurant_data_integrator import RestaurantDataIntegrator
+        
+        # Create instances
+        app = RestaurantScraperApp()
+        
+        print("  ✅ すべてのモジュールが正常にインポートされました")
+        print("  ✅ アプリケーションの初期化に成功しました")
+        return True
+        
+    except Exception as e:
+        print(f"  ❌ テスト中にエラーが発生しました: {e}")
+        return False
+
+def create_usage_guide():
+    """Create usage guide"""
+    print("\n📖 使用ガイドの作成...")
+    
+    guide_path = Path.cwd() / "USAGE.md"
+    guide_content = f"""# 飲食店営業リスト作成アプリ 使用ガイド
+
+## 🚀 クイックスタート
+
+### 対話モード（推奨）
+```bash
+./run.sh
+```
+または
+```bash
+python3 restaurant_scraper_app.py -i
+```
+
+### コマンドラインモード
+```bash
+# 東京都の飲食店を50件取得
+python3 restaurant_scraper_app.py --areas 東京都 --max-per-area 50
+
+# 複数地域から取得
+python3 restaurant_scraper_app.py --areas 東京都 大阪府 神奈川県 --max-per-area 100
+```
+
+## 📝 初期化完了情報
+
+- **初期化日時**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+- **Python バージョン**: {sys.version.split()[0]}
+- **作業ディレクトリ**: {Path.cwd()}
+
+## 📁 ディレクトリ構造
+
+```
+restaurant-scraper/
+├── restaurant_scraper_app.py    # メインアプリケーション
+├── hotpepper_api_client.py      # ホットペッパーAPI
+├── tabelog_scraper_improved.py  # 食べログスクレイパー
+├── restaurant_data_integrator.py # データ統合
+├── .serena/                     # SerenaMCP設定
+├── logs/                        # ログファイル
+├── output/                      # 出力ファイル
+├── cache/                       # キャッシュ
+└── run.sh                       # クイックスタート
+```
+
+## 🔧 トラブルシューティング
+
+問題が発生した場合は、以下を確認してください：
+
+1. Python 3.8以上がインストールされているか
+2. すべての依存関係がインストールされているか
+3. インターネット接続が有効か
+4. `logs/`フォルダ内のログファイル
+
+## 📞 サポート
+
+READMEファイルを参照してください。
+"""
+    
+    with open(guide_path, 'w') as f:
+        f.write(guide_content)
+    print("  ✅ USAGE.mdを作成しました")
+
+def main():
+    """Main initialization function"""
+    print_banner()
+    
+    # Check environment
+    if not check_environment():
+        print("\n❌ 初期化を中断しました")
+        return False
+    
+    # Install dependencies
+    if not install_dependencies():
+        print("\n❌ 初期化を中断しました")
+        return False
+    
+    # Create directories
+    create_directories()
+    
+    # Create config files
+    create_config_files()
+    
+    # Create quick start script
+    create_quick_start_script()
+    
+    # Test application
+    if not test_application():
+        print("\n⚠️  警告: アプリケーションテストが失敗しました")
+        print("  依存関係を再インストールしてください: python3 setup.py")
+    
+    # Create usage guide
+    create_usage_guide()
+    
+    # Success message
+    print("\n" + "="*60)
+    print("✨ 初期化が完了しました！")
+    print("="*60)
+    print("\n🎯 次のステップ:")
+    print("  1. 対話モードで実行: ./run.sh")
+    print("  2. または: python3 restaurant_scraper_app.py -i")
+    print("  3. 詳細はUSAGE.mdを参照してください")
+    print("\n💡 ヒント: ホットペッパーAPIを使用する場合は、")
+    print("  .env.sampleを.envにコピーしてAPIキーを設定してください")
+    
+    return True
+
+if __name__ == "__main__":
+    success = main()
+    sys.exit(0 if success else 1)

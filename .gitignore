@@ -40,6 +40,7 @@ Thumbs.db
 *.log
 
 # Output files
+output/
 *.xlsx
 *.csv
 test_*
@@ -51,4 +52,8 @@ config.py
 # Temporary files
 temp/
 tmp/
+cache/
+
+# SerenaMCP
+.serena/cache/
 
