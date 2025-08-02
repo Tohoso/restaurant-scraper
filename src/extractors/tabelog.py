@@ -60,6 +60,9 @@ class TabelogExtractor(BaseExtractor):
             '.rdheader-rating__score em'
         ],
         'review_count': [
+            'a[href*="/dtlrvwlst/"] em',
+            'span.rdheader-rating__review-target em',
+            '.rdheader-rating__review-target em',
             'em.rstdtl-rating__review-count',
             'span.rstdtl-rating__review-count',
             '.rdheader-rating__review-count em',
@@ -236,10 +239,22 @@ class TabelogExtractor(BaseExtractor):
             if number:
                 return number
         
+        # 追加セレクタで試す（口コミリンク）
+        if self.soup:
+            # 口コミページへのリンクを探す
+            review_link = self.soup.select_one('span.rdheader-rating__review-target')
+            if review_link:
+                text = review_link.get_text(strip=True)
+                # "口コミ96人" のような形式から数字を抽出
+                match = re.search(r'(\d+)', text)
+                if match:
+                    return match.group(1)
+        
         # パターンマッチング
         if self.soup:
             text = self.soup.get_text()
             patterns = [
+                r'口コミ\s*(\d+)\s*人',
                 r'(\d+)\s*件の口コミ',
                 r'口コミ\s*(\d+)\s*件',
                 r'レビュー\s*(\d+)',
