@@ -5,10 +5,13 @@
 ## 🎯 機能
 
 - **食べログスクレイピング**: 店名・電話番号・住所・ジャンル・最寄り駅・営業時間を取得
+- **高速非同期処理**: 最大50同時接続で10倍速の処理速度を実現
 - **ホットペッパーAPI**: 公式APIを使用した高速・安全なデータ取得
 - **データ統合**: 重複除去・データ品質チェック・正規化
 - **Excel出力**: 見やすいフォーマットでの営業リスト作成
 - **対話モード**: 非エンジニア向けの簡単操作
+- **進捗の永続化**: 中断から再開可能な堅牢な設計
+- **エラーハンドリング**: 自動リトライとエラー統計
 
 ## 📋 必要な環境
 
@@ -66,6 +69,16 @@ python restaurant_scraper_app.py --areas 東京都 --hotpepper-key YOUR_API_KEY
 
 # 出力ファイル名を指定
 python restaurant_scraper_app.py --areas 東京都 --output my_restaurant_list.xlsx
+```
+
+### 高速版の使用（大量データ取得時）
+
+```bash
+# 1000件の大量データを高速取得
+python restaurant_scraper_app_fast_v2.py --areas 東京都 --max-per-area 1000
+
+# 環境変数で詳細設定
+MAX_CONCURRENT=100 TIMEOUT=120 python restaurant_scraper_app_fast_v2.py --areas 東京都 --max-per-area 5000
 ```
 
 ## 🔑 ホットペッパーAPIキーの取得
@@ -199,7 +212,43 @@ python setup.py
 
 このソフトウェアはMITライセンスの下で提供されています。
 
+## 🏗️ アーキテクチャ
+
+### リファクタリング版の構成
+
+```
+restaurant-scraper/
+├── config/              # 設定管理
+│   ├── constants.py     # 定数定義
+│   ├── settings.py      # 環境設定
+│   └── logging_config.py # ロギング設定
+├── scrapers/            # スクレイパー実装
+│   ├── base.py          # 基底スクレイパークラス
+│   └── async_scraper.py # 非同期スクレイパー
+├── utils/               # ユーティリティ
+│   ├── validators.py    # データバリデーション
+│   ├── error_handler.py # エラーハンドリング
+│   └── progress.py      # 進捗管理
+└── tests/               # テストコード
+
+```
+
+詳細は[アーキテクチャドキュメント](docs/architecture.md)、[APIリファレンス](docs/api-reference.md)、[移行ガイド](docs/migration-guide.md)を参照してください。
+
 ## 🔄 更新履歴
+
+### v2.0.0 (2025-07-31)
+- 大規模リファクタリング実施
+- モジュール構造の改善
+- 型ヒントとバリデーション強化
+- 包括的なテストスイート追加
+- ドキュメントの整理と改善
+
+### v1.2.0 (2025-07-31)
+- 高速非同期版の実装（10倍速）
+- ジャンル抽出バグの修正
+- 進捗の永続化機能追加
+- エラーハンドリングの改善
 
 ### v1.0.0 (2025-07-31)
 - 初回リリース

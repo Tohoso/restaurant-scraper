@@ -1,0 +1,787 @@
+/Users/invis/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+INFO:__main__:🍽️ 食べログからデータ取得開始（改良版V2）
+INFO:tabelog_scraper_async_v2:前回の進捗を読み込みました: 760件処理済み
+INFO:tabelog_scraper_async_v2:前回の結果を読み込みました: 760件
+INFO:tabelog_scraper_async_v2:🍽️ 東京都のデータ取得開始
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/61/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/62/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/63/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/64/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/65/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/66/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/69/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/67/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/68/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/71/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/70/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/72/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/73/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/75/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/74/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/76/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/77/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/78/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/81/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/84/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/79/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/80/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/83/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/82/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/86/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/88/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/87/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/85/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/89/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/90/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/92/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/91/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/95/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/94/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/93/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/96/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/97/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/98/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/102/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/99/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/101/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/100/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/105/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/104/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/103/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/106/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/107/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/109/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/108/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/111/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/110/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/113/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/112/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/116/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/115/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/117/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/114/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/118/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/120/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/119/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/126/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/122/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/121/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/125/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/129/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/123/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/124/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/128/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/127/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/131/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/132/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/130/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/133/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/134/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/138/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/135/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/136/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/139/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/137/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/140/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/141/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/142/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/143/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/144/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/145/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/147/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/146/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/148/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/153/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/150/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/149/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/151/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/155/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/156/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/152/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/157/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/154/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/160/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/158/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/162/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/159/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/164/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/161/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/166/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/165/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/163/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/167/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/168/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/170/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/171/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/169/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/173/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/172/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/174/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/176/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/177/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/175/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/178/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/180/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/179/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/181/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/182/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/183/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/187/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/184/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/188/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/186/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/185/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/190/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/193/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/189/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/192/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/191/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/194/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/197/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/196/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/195/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/200/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/201/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/202/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/198/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/203/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/199/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/204/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/205/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/207/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/210/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/206/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/209/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/212/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/211/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/208/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/213/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/214/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/216/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/217/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/218/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/219/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/215/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/220/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/221/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/222/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/224/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/225/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/228/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/223/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/227/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/226/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/232/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/229/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/230/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/233/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/231/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/234/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/235/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/236/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/239/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/237/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/238/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/240/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/242/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/241/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/243/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/244/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/246/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/245/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/249/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/247/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/248/
+WARNING:tabelog_scraper_async_v2:HTTPエラー 400: https://tabelog.com/tokyo/rstLst/250/
+INFO:tabelog_scraper_async_v2:ページ 1: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 2: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 3: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 4: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 5: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 6: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 7: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 8: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 9: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 10: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 11: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 12: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 13: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 14: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 15: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 16: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 17: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 18: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 19: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 20: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 21: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 22: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 23: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 24: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 25: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 26: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 27: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 28: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 29: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 30: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 31: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 32: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 33: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 34: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 35: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 36: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 37: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 38: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 39: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 40: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 41: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 42: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 43: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 44: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 45: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 46: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 47: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 48: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 49: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 50: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 51: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 52: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 53: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 54: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 55: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 56: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 57: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 58: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 59: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:ページ 60: 20件の店舗URL取得
+INFO:tabelog_scraper_async_v2:合計 1200 件の店舗URL取得
+INFO:tabelog_scraper_async_v2:バッチ処理中: 761-780/1200
+/Users/invis/Library/Python/3.9/lib/python/site-packages/soupsieve/css_parser.py:876: FutureWarning: The pseudo class ':contains' is deprecated, ':-soup-contains' should be used moving forward.
+  warnings.warn(  # noqa: B028
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [761件目]: 北斗 麻辣湯
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [762件目]: 海と山の幸 和 KAZU
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [763件目]: 個室居酒屋 座楽 渋谷駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [764件目]: メナムのほとり テラススクエア店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [765件目]: リストランテ・マッサ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [766件目]: 縡魂
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [767件目]: 築地とときち 新宿三丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [768件目]: 大衆酒場フレンチマン 小虎小路店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [769件目]: USHIMITSU NISHIAZABU
+INFO:tabelog_scraper_async_v2:進捗保存: 770件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [770件目]: Cheese To Meat You
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [771件目]: 南国亭 町田本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [772件目]: Dochaku
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [773件目]: SUD restaurant
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [774件目]: ラ・ブーシェリー・エ・ヴァン 肉屋のワイン食堂 浜松町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [775件目]: 神楽坂ルバイヤート
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [776件目]: ダンシング クラブ 東京
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [777件目]: 近江牛もりしま 寛閑観ここ滋賀店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [778件目]: 銘柄焼鳥 もつ鍋 完全個室 鳥万 渋谷店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [779件目]: ぶたぼーる 大塚店
+INFO:tabelog_scraper_async_v2:進捗保存: 780件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [780件目]: ニルワナム 虎ノ門店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 781-800/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [781件目]: NAN STATION CAFE&TERRACE
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [782件目]: 紀州屋
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [783件目]: 鮮魚釜飯 ヒカリ屋
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [784件目]: ゆたかや商店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [785件目]: 神戸牛ダイア 雷門西店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [786件目]: 飛騨居酒屋 蔵助
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [787件目]: 日本栄光酒場 ロッキーササヤ 大崎
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [788件目]: 曙橋もつ焼き酒場 てけてけ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [789件目]: ジンギスカン TORICO
+INFO:tabelog_scraper_async_v2:進捗保存: 790件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [790件目]: tea&bar 爽-sou- 町田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [791件目]: FAMiRES
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [792件目]: 炭火焼鳥 ももたろう 麻布十番
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [793件目]: まめたい商店 野方店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [794件目]: 新宿おすすめ酒場
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [795件目]: 個室中華 唐文記 浜松町・大門店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [796件目]: 銀座 鮨 中本
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [797件目]: きどり酒場
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [798件目]: オーヴェスト
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [799件目]: 韓国個室横丁ハヌリ 新宿西口店
+INFO:tabelog_scraper_async_v2:進捗保存: 800件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [800件目]: 北海道 はなの舞 浅草雷門店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 801-820/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [801件目]: KHANA KHAJA Indian.Nepali Asian Dining & Bar 上野御徒町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [802件目]: SUSHIROKU
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [803件目]: 地鶏と鮮魚の個室和バル 四季の里 秋葉原本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [804件目]: 神戸牛焼肉 萬貫
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [805件目]: 焼肉トラジ 新宿店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [806件目]: 六緑
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [807件目]: シャイニーアウル 表参道
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [808件目]: 台南担仔麺
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [809件目]: 一㐂
+INFO:tabelog_scraper_async_v2:進捗保存: 810件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [810件目]: 築地 刺天
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [811件目]: 神戸牛 日本橋イタダキ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [812件目]: 塚田農場 1号店 八王子店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [813件目]: 月島もんじゃ 三九 上野総本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [814件目]: うに小屋 高田馬場店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [815件目]: ワインと炭火串焼 銀座 荻
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [816件目]: 個室居酒屋 咲くら 錦糸町駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [817件目]: 牡蠣屋 浅草 惚のじ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [818件目]: 博多NIKONNE
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [819件目]: 天空LOUNGE TOP of TREE 東京スカイツリータウン・ソラマチ店
+INFO:tabelog_scraper_async_v2:進捗保存: 820件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [820件目]: 炭火焼肉 あもん
+INFO:tabelog_scraper_async_v2:バッチ処理中: 821-840/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [821件目]: 神戸牛ダイア 歌舞伎町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [822件目]: 花結び
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [823件目]: 串八本舗
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [824件目]: しゃぶしゃぶ 串焼き 新宿 inton
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [825件目]: 三代目網元 魚鮮水産 本所吾妻橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [826件目]: 焼肉･韓国料理 とうがらし101
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [827件目]: 串かつ酒場 ひろかつ 上野アメ横店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [828件目]: La Alba
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [829件目]: 赤羽の ざきや
+INFO:tabelog_scraper_async_v2:進捗保存: 830件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [830件目]: 焼肉うしふじ 西新宿本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [831件目]: 魚がし商店 上野本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [832件目]: 鳥元 馬喰町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [833件目]: MACERBO
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [834件目]: 台湾担仔麺 汐留店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [835件目]: とり処
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [836件目]: 藤栗ホルモン
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [837件目]: SUSHI BAR 魚々 COZY
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [838件目]: 串カツ田中 経堂店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [839件目]: 鰻いち黒船
+INFO:tabelog_scraper_async_v2:進捗保存: 840件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [840件目]: たこ焼き岩ちゃん
+INFO:tabelog_scraper_async_v2:バッチ処理中: 841-860/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [841件目]: レストラン 西洋銀座
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [842件目]: くろ酒場 薩摩
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [843件目]: どさんこ酒場森町しげぞう 八重洲店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [844件目]: のどぐろ専門 銀座中俣 はなれ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [845件目]: 焼肉ホルモン酒場 韓の台所 蒲田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [846件目]: 上海台所
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [847件目]: マーサー カフェ ダンロ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [848件目]: 焼鶏あきら 丸の内店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [849件目]: 完全個室 海鮮居酒屋 魚銀 池袋駅前店
+INFO:tabelog_scraper_async_v2:進捗保存: 850件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [850件目]: 完全個室居酒屋 赤坂 京小町
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [851件目]: 西大島ホルモンセンター
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [852件目]: 羊炭長
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [853件目]: かいのみ 新宿三丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [854件目]: 喜楽
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [855件目]: ベルゴ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [856件目]: ラ ココリコ 渋谷
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [857件目]: Beer&Raclette 133
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [858件目]: CEDAR THE CHOP HOUSE＆BAR
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [859件目]: RIGOLETTO ROTISSERIE AND WINE
+INFO:tabelog_scraper_async_v2:進捗保存: 860件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [860件目]: AWASELVES
+INFO:tabelog_scraper_async_v2:バッチ処理中: 861-880/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [861件目]: SUN3
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [862件目]: スタンド 源ちゃん 東京ポートシティ竹芝店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [863件目]: 炭火焼肉 牛ライフ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [864件目]: 七輪焼肉 安安 葛西店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [865件目]: bistronomie Avin
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [866件目]: あかり
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [867件目]: 居酒屋 土間土間 銀座一丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [868件目]: 個室・呑処 華
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [869件目]: ワダチ
+INFO:tabelog_scraper_async_v2:進捗保存: 870件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [870件目]: Tinc gana
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [871件目]: まつもと
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [872件目]: RIBAYON ATTACK
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [873件目]: 博多でべそ 品川フロントビル店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [874件目]: 小料理 えす
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [875件目]: マンジョッオヒャンジョッパル&ソベッチャカンジャンケジャン
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [876件目]: アデニア
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [877件目]: とりちゃん 新宿2号店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [878件目]: 居酒屋FUNFAN
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [879件目]: エビスフードホール 恵比寿
+INFO:tabelog_scraper_async_v2:進捗保存: 880件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [880件目]: 渋谷焼き鳥酒場 いぶし鳥
+INFO:tabelog_scraper_async_v2:バッチ処理中: 881-900/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [881件目]: Opuses
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [882件目]: とり家ゑび寿 平和台北口店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [883件目]: 東京ミート酒場 高田馬場店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [884件目]: 焼鳥 くふ楽 銀座総本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [885件目]: 神楽坂 とりや 蝦名
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [886件目]: 新宿 かに月
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [887件目]: 小熊
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [888件目]: 個室居酒屋酒蔵季 船堀駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [889件目]: ル バー ラヴァン サンカンドゥ アザブ トウキョウ 麻布十番店
+INFO:tabelog_scraper_async_v2:進捗保存: 890件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [890件目]: カルネヴィーノ 銀座
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [891件目]: TOKYO焼肉ごぉ 錦糸町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [892件目]: 炎麻堂 神田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [893件目]: 居酒屋 みらいちず
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [894件目]: 大阪焼肉 うしとみ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [895件目]: iitoki
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [896件目]: 御料理 はませい
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [897件目]: わらやき屋 品川
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [898件目]: 鶴橋串焼 松よし 三軒茶屋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [899件目]: 水道橋横丁
+INFO:tabelog_scraper_async_v2:進捗保存: 900件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [900件目]: リストランテペルアモーレディカリッシマ
+INFO:tabelog_scraper_async_v2:バッチ処理中: 901-920/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [901件目]: 百干 国分寺店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [902件目]: 完全個室 N's 六本木
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [903件目]: 銀座 塒
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [904件目]: 高知 アテと酒 ほたえる
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [905件目]: 銀座 串揚げ 煌 -kou-
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [906件目]: クラフトビール工房 新宿エール
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [907件目]: しゃぶしゃぶ温野菜 門前仲町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [908件目]: 日本酒原価酒蔵 錦糸町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [909件目]: マルゴ 新橋
+INFO:tabelog_scraper_async_v2:進捗保存: 910件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [910件目]: 馬刺しと博多天神もつ鍋 本格九州料理 個室居酒屋 京桜 八重洲店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [911件目]: 木村屋本店 町田駅前
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [912件目]: 牛若丸 渋谷店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [913件目]: トラットリア リブロ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [914件目]: ミートキッチン log50 ハレザ池袋前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [915件目]: スペインバルALBA 竹橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [916件目]: 串かつとお酒 でんがな 下北沢店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [917件目]: 割烹きたろう
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [918件目]: MeguRu
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [919件目]: 個室居酒屋 肉宴 蒲田本店
+INFO:tabelog_scraper_async_v2:進捗保存: 920件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [920件目]: 焼鳥今井
+INFO:tabelog_scraper_async_v2:バッチ処理中: 921-940/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [921件目]: goodspoon Cheese Sweets & Cheese Brunch エキュート上野店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [922件目]: 個室×肉バル×熟成肉 YOKUBAL
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [923件目]: 喃喃
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [924件目]: 韓国家庭料理&焼肉 大長今
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [925件目]: 水炊き 鼓次郎
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [926件目]: 腹黒屋 田町
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [927件目]: ビストロラドレ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [928件目]: トゥー・ドッグス・タップルーム
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [929件目]: 完全個室居酒屋 串ごろ 飯田橋店
+INFO:tabelog_scraper_async_v2:進捗保存: 930件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [930件目]: 炭火焼きと創作酒肴 粋 田町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [931件目]: 炭火焼鳥 うお城
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [932件目]: 神鶏 荻窪店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [933件目]: 神楽酒 神楽坂店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [934件目]: 焼肉白炭
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [935件目]: 四季旬菜 かん
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [936件目]: ひがこDINING彩り
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [937件目]: 食堂 酒晴 新宿3丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [938件目]: しゃぶしゃぶ 山笑ふ 銀座店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [939件目]: ニュービストロガブリ 目黒店
+INFO:tabelog_scraper_async_v2:進捗保存: 940件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [940件目]: プレミアムカラオケモディス 渋谷
+INFO:tabelog_scraper_async_v2:バッチ処理中: 941-960/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [941件目]: 築地鳥たけ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [942件目]: 和食麺処 サガミ 町田金井店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [943件目]: 和食れすとらん 天狗 志村二丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [944件目]: Peace
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [945件目]: 魚馬る ふぶき
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [946件目]: 中国西北料理 大新疆
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [947件目]: 鉄板居酒屋お好みキング
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [948件目]: さかえや 恵比寿本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [949件目]: タッカンマリ大学
+INFO:tabelog_scraper_async_v2:進捗保存: 950件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [950件目]: すし土風炉 秋葉原店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [951件目]: BOMBAY SIZZLERS
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [952件目]: ビール100円『たんと』
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [953件目]: 中華バル 酔拳 高円寺
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [954件目]: 深川三久本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [955件目]: 居酒屋 万喜
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [956件目]: てけてけ 渋谷宇田川町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [957件目]: PESCHERIA
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [958件目]: 銀座 よし澤
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [959件目]: LOUANGE TOKYO Le Musée
+INFO:tabelog_scraper_async_v2:進捗保存: 960件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [960件目]: 全席個室 ウメ子の家 渋谷公園通店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 961-980/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [961件目]: 焚き火～酒と藁焼きとわたし～
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [962件目]: トスカーナ 神谷町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [963件目]: 博多屋台居酒屋 中洲春吉 馬喰町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [964件目]: 焼肉処カルネ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [965件目]: 鮮魚と炉端と純米酒 かきび
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [966件目]: 琉球酒場 げん
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [967件目]: 勝どき大衆酒場 ドラゴン
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [968件目]: 自由が丘 修
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [969件目]: 火入れ みつ囲 新宿西口パレット店
+INFO:tabelog_scraper_async_v2:進捗保存: 970件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [970件目]: HIKARI
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [971件目]: 完全個室居酒屋 串ごろ 池袋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [972件目]: 肉とチーズバルGRILL屋 府中店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [973件目]: beer & wine厨房 tamaya 八丁堀店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [974件目]: ミゲルフアニ 東京スカイツリータウン・ソラマチ店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [975件目]: 郷土料理居酒屋 おいどん 不動前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [976件目]: 蜀郷香
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [977件目]: Cafe&Bar TerraCotta
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [978件目]: 居酒屋 千
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [979件目]: 六歌仙 西口大ガード店
+INFO:tabelog_scraper_async_v2:進捗保存: 980件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [980件目]: 神楽坂 SHUN 分家
+INFO:tabelog_scraper_async_v2:バッチ処理中: 981-1000/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [981件目]: 焼鳥と酒 木々家 池袋西口本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [982件目]: あわよくばあー 中目黒
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [983件目]: 魚介ビストロ sasaya 蒲田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [984件目]: 大人居酒屋 じゃいろ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [985件目]: 香港厨房
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [986件目]: THE ROAST KOBE MEAT HOUSE
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [987件目]: 越後酒房八海山 神楽坂店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [988件目]: 大衆居酒屋 とりいちず 池袋東口店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [989件目]: 和cheese TENSAI
+INFO:tabelog_scraper_async_v2:進捗保存: 990件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [990件目]: もつ焼きパラダイス富士 神田
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [991件目]: 焼肉×バル マルウシミート 新橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [992件目]: ラス ボカス
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [993件目]: たこえびす
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [994件目]: YOLO cafe&shisha 渋谷マークシティ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [995件目]: 吉祥 吉祥寺店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [996件目]: 炭火焼肉 肉人 三茶店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [997件目]: 四十八漁場 府中店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [998件目]: 金のだししゃぶ 八馬 新宿本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [999件目]: 上村
+INFO:tabelog_scraper_async_v2:進捗保存: 1000件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1000件目]: カラオラ テラス・スペイン料理・大手町
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1001-1020/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1001件目]: 鹿児島料理 丸万 東急プラザ渋谷店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1002件目]: Drammatico
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1003件目]: NK Diner 193
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1004件目]: かがみ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1005件目]: 焼肉 牛山道 池袋本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1006件目]: 麺とおばんざいとお酒のお店 佳什
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1007件目]: PRIME TOKYO 新宿野村ビル49F
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1008件目]: キャプテンズワーフ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1009件目]: 楽福居 餃子酒場 三越前店
+INFO:tabelog_scraper_async_v2:進捗保存: 1010件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1010件目]: 八仙 秋葉原 別邸
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1011件目]: 炉端炭火焼き とらまつ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1012件目]: 点心すや
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1013件目]: ポップコーン ドット
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1014件目]: 酒場MORI 代々木店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1015件目]: 庄や 相原駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1016件目]: HEARTH SMOKED GRILL＆GALETTE
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1017件目]: 創造中華 華星
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1018件目]: 個室居酒屋 緋桜 新宿店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1019件目]: 新宿焼肉芝浦ホルモン
+INFO:tabelog_scraper_async_v2:進捗保存: 1020件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1020件目]: 元祖シュウマイ酒場 野田焼売店 代々木酒場
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1021-1040/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1021件目]: たかの家 水道橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1022件目]: 焼き鳥 炙り焼き をどり 虎ノ門飯野ビル店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1023件目]: 全席完全個室 吉蔵 赤羽店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1024件目]: 江南府
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1025件目]: 神楽坂ささ木
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1026件目]: brooklyn first diner
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1027件目]: 旨唐揚げと居酒メシ ミライザカ 金町北口駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1028件目]: お料理 乃いろ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1029件目]: 六本木 すし巽
+INFO:tabelog_scraper_async_v2:進捗保存: 1030件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1030件目]: ai’s
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1031件目]: 串カツ田中 国分寺店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1032件目]: ぱいかじ 銀座八丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1033件目]: 大衆居酒屋 とりいちず 中野北口店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1034件目]: 元氣七輪焼肉 牛繁 池上店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1035件目]: THE BARBA TOKYO MEAT MEET
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1036件目]: 肉寿司ダイニングMEAT HOUSE 新橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1037件目]: とり家ゑび寿 船堀店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1038件目]: pentolaC
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1039件目]: 焼肉 粋
+INFO:tabelog_scraper_async_v2:進捗保存: 1040件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1040件目]: 鮮魚と地酒屋 漁介 高田馬場店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1041-1060/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1041件目]: 黒座暁樓 赤坂
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1042件目]: 食彩一番 神楽坂
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1043件目]: オステリア タイム
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1044件目]: タレ焼き鳥・土鍋ごはん 青キジ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1045件目]: 炭火焼ホルモン ぐう 渋谷
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1046件目]: 蕎麦割烹 一心
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1047件目]: 木村屋本店 門前仲町
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1048件目]: 一味玲玲 品川店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1049件目]: 博多水たき さ和鳥 八丁堀
+INFO:tabelog_scraper_async_v2:進捗保存: 1050件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1050件目]: 個室中華居酒屋 好来酒場
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1051件目]: デンズカフェ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1052件目]: 東京鉄板居酒屋 こだま
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1053件目]: 地どり居酒屋 個室宴会 キンクラ 大山店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1054件目]: 九州産地直送居酒屋 さくら 新宿三丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1055件目]: トラットリア・コッレ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1056件目]: 庄や 亀戸店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1057件目]: Focacceria la Brianza
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1058件目]: なごみ庵 武者武者
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1059件目]: 焼き鳥とおでん 個室居酒屋 二刀流
+INFO:tabelog_scraper_async_v2:進捗保存: 1060件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1060件目]: 炭焼うな富士 東京ミッドタウン八重洲店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1061-1080/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1061件目]: 山形牛一頭買いITAMAE焼肉 美美
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1062件目]: ピエトロ 国立店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1063件目]: ネパール料理&BAR MANDALA
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1064件目]: おでん 和食 銀座おぐ羅 丸の内TOKIA店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1065件目]: 中国料理 龍府
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1066件目]: 松尾ジンギスカン 新宿三丁目店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1067件目]: 居酒茶屋 鑪
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1068件目]: しながわ畑
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1069件目]: 完全個室 牛の達人 private 新宿本店
+INFO:tabelog_scraper_async_v2:進捗保存: 1070件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1070件目]: ラヴァン・グゥ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1071件目]: 赤羽 友星
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1072件目]: ピッツェリア トラットリア ニッターナ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1073件目]: 鉄板酒場 三八
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1074件目]: 七輪焼肉 安安 高田馬場店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1075件目]: 結
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1076件目]: ホンデポチャ ほぼ新宿のれん街別館
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1077件目]: 炭火焼肉ホルモン 横綱三四郎Neo 西荻窪店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1078件目]: AnimA osteria e pizzeria
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1079件目]: 完全個室居酒屋 串ばってん 上野店
+INFO:tabelog_scraper_async_v2:進捗保存: 1080件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1080件目]: 鉄板鍋きのした 恵比寿はなれ
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1081-1100/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1081件目]: 和馬’sキッチン
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1082件目]: 葵屋 北千住店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1083件目]: 餃子 小籠包 福包酒場 渋谷店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1084件目]: 山彦
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1085件目]: てけてけ 四ツ谷店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1086件目]: タカズ ビストロ ヴィエス
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1087件目]: イタリアンダイニングDONA 町田マルシェ店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1088件目]: ORTIGA
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1089件目]: 炭火焼鳥 塚田農場 THE2nd 新橋店
+INFO:tabelog_scraper_async_v2:進捗保存: 1090件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1090件目]: ル バー ラヴァン サンカンドゥ アザブ トウキョウ アトレ恵比寿西館店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1091件目]: Restaurant Bar AMUSEMENT
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1092件目]: シャルロッテ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1093件目]: 浅草にし座わ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1094件目]: だしとこな
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1095件目]: すっぽん 田一
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1096件目]: インド料理 ムンバイ 銀座店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1097件目]: 寿司 築地日本海 竹の塚店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1098件目]: 隠れ家ダイニング さーて
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1099件目]: YAKITORI FICO
+INFO:tabelog_scraper_async_v2:進捗保存: 1100件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1100件目]: 錦糸町ジンギスカン オクノ羊ヤ、ミナミ
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1101-1120/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1101件目]: 韓感 大久保店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1102件目]: CONA 立川店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1103件目]: 隠れ家イタリアン肉バル La Carne 下高井戸本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1104件目]: 牡蠣と寿司 福島屋バル 秋葉原店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1105件目]: さくら餃子酒場 神田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1106件目]: 韓村
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1107件目]: 大漁
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1108件目]: 串特急 新橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1109件目]: 羊貴族・四季香 池袋北口店
+INFO:tabelog_scraper_async_v2:進捗保存: 1110件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1110件目]: 酒枡
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1111件目]: 浜松町 たれ焼肉のんき
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1112件目]: 土蛍
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1113件目]: 焼き鳥 肉寿司 食べ放題 飲み放題 個室居酒屋 鳥物語 錦糸町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1114件目]: 恵比寿屋 Grill 国分寺店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1115件目]: 串焼き&海鮮 酔燈屋 有楽町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1116件目]: bhive
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1117件目]: ニホンバシ・ブルワリー 人形町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1118件目]: しゃぶしゃぶ 上野 かこい
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1119件目]: 舟町一期
+INFO:tabelog_scraper_async_v2:進捗保存: 1120件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1120件目]: グリル満天星 麻布十番 日本橋三越店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1121-1140/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1121件目]: おさかなや 魚魚権 神泉店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1122件目]: アスタリスク1103
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1123件目]: 築地 寿司岩 築地支店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1124件目]: 焼売のジョー 巣鴨店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1125件目]: ビゴーテ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1126件目]: 中国料理 龍皇
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1127件目]: 築地浜茂鮨
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1128件目]: 東京夢酒場 下北沢店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1129件目]: 目黒 日本酒バル いと。
+INFO:tabelog_scraper_async_v2:進捗保存: 1130件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1130件目]: カウンター焼肉 ふかみ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1131件目]: 日本酒 酒晴 練馬店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1132件目]: もてなしや将 西日暮里店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1133件目]: 吟乃月 有楽町店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1134件目]: 博多炉端しらべ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1135件目]: ワインの酒場 ディプント 五反田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1136件目]: 焼肉ホルモン たけ田 新宿店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1137件目]: 新富町 前じま
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1138件目]: ビヤホールライオン 新宿店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1139件目]: 逢鳥
+INFO:tabelog_scraper_async_v2:進捗保存: 1140件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1140件目]: イルチェーロ 恵比寿
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1141-1160/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1141件目]: 麻布さおとめ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1142件目]: 魚の旨い店 飯田橋本店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1143件目]: 大衆ビストロ Cook Man’s
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1144件目]: リオ・ブルーイング・コー ビストロアンドガーデン 東京ミッドタウン
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1145件目]: 九州博多料理 いなせもん 神田店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1146件目]: スパイスボックス
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1147件目]: 銀座 鉄板焼き Sublime
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1148件目]: imakara
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1149件目]: 焼肉うしごろ 西麻布本店
+INFO:tabelog_scraper_async_v2:進捗保存: 1150件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1150件目]: 気楽酒場 若泉庵
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1151件目]: 麦ノ音
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1152件目]: いちげん 浮間店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1153件目]: N9Y BUTCHER'S GRILL NEWYORK 銀座店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1154件目]: 酒肴いそや
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1155件目]: trattoria GALLIANO
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1156件目]: ワイン食堂 ブルマーレ 新宿店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1157件目]: 吉粋 囲い 品川店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1158件目]: シカゴピザ&ボルケーノパスタ Meat&Cheese Forne
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1159件目]: 中野坂上焼肉 ブルズ亭
+INFO:tabelog_scraper_async_v2:進捗保存: 1160件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1160件目]: 小籠包マニア 神田店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1161-1180/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1161件目]: そばえもん 大崎店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1162件目]: イタメシ食堂 アペロ 渋谷道玄坂店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1163件目]: かちかちレモンサワー×野菜巻き串工房 ひかり 上野駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1164件目]: 焼肉商店 そら
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1165件目]: 街角グラス
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1166件目]: てけてけ 新宿御苑店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1167件目]: とりいちず 調布店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1168件目]: 恵比寿 天空ビアガーデン&BBQ EBITEN
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1169件目]: ディップマハル 神楽坂店
+INFO:tabelog_scraper_async_v2:進捗保存: 1170件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1170件目]: 七輪焼肉 安安 中延駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1171件目]: アイアンマン
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1172件目]: 銀座 鮨 しょう介
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1173件目]: やきとん多吉 渋谷店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1174件目]: 呑み処 タナカたなか 下北沢店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1175件目]: 炭火焼肉オールスターズホルモンとんぼ
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1176件目]: 味わい屋
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1177件目]: 個室居酒屋 雪の村 新橋店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1178件目]: 博多前炉ばた 一承 東京上野
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1179件目]: 鮨とおでん＆ 日本橋室町店
+INFO:tabelog_scraper_async_v2:進捗保存: 1180件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1180件目]: 鉄板Diner JAKEN 池袋本店
+INFO:tabelog_scraper_async_v2:バッチ処理中: 1181-1200/1200
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1181件目]: SHISHA CAFE&BAR FREAKS
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1182件目]: 牛たん食べ放題 仙台ホルモン焼肉酒場 ときわ亭 高田馬場店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1183件目]: 神楽坂イタリアン 400 クワトロ チェント
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1184件目]: 海人
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1185件目]: 肉バル 完全個室×居酒屋 京 アメ横店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1186件目]: 渋谷ガーデンスペース 道玄坂店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1187件目]: 炭火串焼けむり 吉祥寺
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1188件目]: すしさとる
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1189件目]: 大手町ZION
+INFO:tabelog_scraper_async_v2:進捗保存: 1190件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1190件目]: 炭火焼肉 龍
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1191件目]: ディアフリック
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1192件目]: NB CLUB
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1193件目]: 焼肉 いのうえ 国分寺店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1194件目]: 東京寿司 ITAMAE SUSHI 銀座コリドー店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1195件目]: ワッサイ酒場
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1196件目]: 蔦乃屋
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1197件目]: タント タント オステリア アトレ恵比寿
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1198件目]: アークラウンジ 新宿西口駅前店
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1199件目]: 焼鳥 燃暖
+INFO:tabelog_scraper_async_v2:進捗保存: 1200件完了
+INFO:tabelog_scraper_async_v2:✅ 店舗情報取得成功 [1200件目]: 小岩井農場TOKYO
+INFO:__main__:✅ 食べログから 440 件取得完了
+INFO:__main__:📊 データ品質: 439/440 件が住所・電話番号あり
+INFO:__main__:🔄 データ統合処理中...
+INFO:restaurant_data_integrator:440件の飲食店データを追加しました
+INFO:restaurant_data_integrator:重複除去: 0件を除去、440件が残りました
+INFO:__main__:
+📊 処理完了統計:
+INFO:__main__:  総取得件数: 440件
+INFO:__main__:  統合後件数: 440件
+INFO:__main__:  処理時間: 140.3秒
+INFO:__main__:  処理速度: 3.1件/秒
+INFO:__main__:
+📈 データ品質統計:
+INFO:__main__:  電話番号あり: 439/440 (99.8%)
+INFO:__main__:  住所あり: 440/440 (100.0%)
+INFO:__main__:  ジャンルあり: 440/440 (100.0%)
+INFO:__main__:  最寄り駅あり: 440/440 (100.0%)
+INFO:__main__:  営業時間あり: 440/440 (100.0%)
+INFO:__main__:📝 Excelファイル作成中: output/restaurant_list_v2_20250731_230455.xlsx
+INFO:restaurant_data_integrator:Excelファイルを作成しました: output/restaurant_list_v2_20250731_230455.xlsx
+INFO:__main__:✅ Excelファイル保存完了: output/restaurant_list_v2_20250731_230455.xlsx
+INFO:__main__:   ファイルサイズ: 89.1 KB
