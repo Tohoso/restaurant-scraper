@@ -167,7 +167,7 @@ class HotpepperAPIClient:
             try:
                 shop_info = {
                     'shop_name': shop.get('name', ''),
-                    'phone': shop.get('tel', ''),
+                    'phone': shop.get('ktai_tel', '') or shop.get('tel', ''),  # 携帯電話番号を優先
                     'address': shop.get('address', ''),
                     'genre': shop.get('genre', {}).get('name', ''),
                     'station': shop.get('station_name', ''),
