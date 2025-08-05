@@ -165,6 +165,14 @@ class HotpepperAPIClient:
         
         for shop in shops:
             try:
+                # 予算情報の処理
+                budget_info = shop.get('budget', {})
+                budget_name = budget_info.get('name', '')
+                budget_average = budget_info.get('average', '')
+                
+                # 平均予算がある場合はそれを使用、なければ名称を使用
+                budget_dinner = budget_average if budget_average else budget_name
+                
                 shop_info = {
                     'shop_name': shop.get('name', ''),
                     'phone': shop.get('ktai_tel', '') or shop.get('tel', ''),  # 携帯電話番号を優先
@@ -174,9 +182,31 @@ class HotpepperAPIClient:
                     'access': shop.get('access', ''),
                     'open_time': shop.get('open', ''),
                     'close_time': shop.get('close', ''),
-                    'budget': shop.get('budget', {}).get('name', ''),
+                    'budget': budget_name,  # 互換性のため維持
                     'url': shop.get('urls', {}).get('pc', ''),
-                    'source': 'ホットペッパーグルメ'
+                    'source': 'ホットペッパーグルメ',
+                    # 追加フィールド
+                    'seats': str(shop.get('capacity', '')) if shop.get('capacity') else '',  # 総席数
+                    'party_capacity': str(shop.get('party_capacity', '')) if shop.get('party_capacity') else '',  # 最大宴会収容人数
+                    'budget_dinner': budget_dinner,  # ディナー予算
+                    'budget_memo': shop.get('budget_memo', ''),  # 料金備考
+                    'catch': shop.get('catch', ''),  # お店キャッチ
+                    'genre_catch': shop.get('genre', {}).get('catch', ''),  # ジャンルキャッチ
+                    'photo_url': shop.get('photo', {}).get('pc', {}).get('l', ''),  # 写真URL
+                    'mobile_url': shop.get('urls', {}).get('mobile', ''),  # モバイルURL
+                    'card': shop.get('card', ''),  # カード利用
+                    'non_smoking': shop.get('non_smoking', ''),  # 禁煙・喫煙
+                    'charter': shop.get('charter', ''),  # 貸切
+                    'parking': shop.get('parking', ''),  # 駐車場
+                    'child': shop.get('child', ''),  # お子様連れ
+                    'pet': shop.get('pet', ''),  # ペット可
+                    'wifi': shop.get('wifi', ''),  # WiFi
+                    'lunch': shop.get('lunch', ''),  # ランチ
+                    'midnight': shop.get('midnight', ''),  # 23時以降も営業
+                    'course': shop.get('course', ''),  # コース
+                    'free_drink': shop.get('free_drink', ''),  # 飲み放題
+                    'free_food': shop.get('free_food', ''),  # 食べ放題
+                    'private_room': shop.get('private_room', ''),  # 個室
                 }
                 
                 # 必須項目チェック

@@ -177,12 +177,20 @@ class HotPepperScraper(BaseScraper):
         # 追加情報を付与
         for shop in extracted:
             shop['scraped_at'] = datetime.now().isoformat()
-            # 口コミ数、席数などはHotPepper APIでは取得できない
+            # 口コミ数、評価はHotPepper APIでは提供されない
             shop['review_count'] = ''
-            shop['seats'] = ''
             shop['rating'] = ''
+            # 公式URLは提供されない
             shop['official_url'] = ''
-            shop['budget_dinner'] = shop.get('budget', '')
-            shop['budget_lunch'] = ''
+            # 予算情報はbudget_dinnerに既に設定済み
+            shop['budget_lunch'] = ''  # ランチ予算は別途取得不可
+            
+            # seatsは既にhotpepper_api_clientで設定済み
+            # party_capacityが設定されている場合は補足情報として追加
+            if shop.get('party_capacity'):
+                if shop.get('seats'):
+                    shop['seats'] = f"{shop['seats']}席（宴会最大{shop['party_capacity']}名）"
+                else:
+                    shop['seats'] = f"宴会最大{shop['party_capacity']}名"
         
         return extracted
