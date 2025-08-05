@@ -1,12 +1,13 @@
 # Restaurant Scraper - 飲食店営業リスト作成アプリ
 
-食べログから飲食店情報を収集してExcelファイルに出力するPythonスクレイパー（リファクタリング版）
+食べログ・ホットペッパーグルメから飲食店情報を収集してExcelファイルに出力するPythonスクレイパー（リファクタリング版）
 
 ## 🎯 機能
 
-- **食べログスクレイピング**: 店名・電話番号・住所・ジャンル・最寄り駅・営業時間を取得
-- **高速非同期処理**: 最大50同時接続で10倍速の処理速度を実現
+- **食べログスクレイピング**: 店名・電話番号・住所・ジャンル・最寄り駅・営業時間・席数・口コミ数を取得
 - **ホットペッパーAPI**: 公式APIを使用した高速・安全なデータ取得
+- **高速非同期処理**: 最大10同時接続で効率的な処理
+- **データソース統合**: 両方のソースから取得して重複を自動除去
 - **データ統合**: 重複除去・データ品質チェック・正規化
 - **Excel出力**: 見やすいフォーマットでの営業リスト作成
 - **対話モード**: 非エンジニア向けの簡単操作
@@ -43,42 +44,64 @@ python setup.py
 
 ## 💡 使用方法
 
-### 対話モード（推奨）
+### 基本的な使い方
 
 ```bash
-python restaurant_scraper_app.py -i
+# 食べログから渋谷エリアの飲食店100件を取得
+python main.py --areas 渋谷 --limit 100
+
+# 複数エリアから取得
+python main.py --areas "銀座・新橋・有楽町" "新宿・代々木・大久保" --limit 200
+
+# ホットペッパーから取得（APIキーが必要）
+python main.py --source hotpepper --areas 東京都 --hotpepper-key YOUR_API_KEY --limit 100
+
+# 両方のソースから取得して統合
+python main.py --source both --areas 渋谷 --hotpepper-key YOUR_API_KEY --limit 200
 ```
 
-画面の指示に従って以下を設定：
-- 対象地域の選択
-- 取得件数の設定
-- データソースの選択
-- 出力ファイル名
-
-### コマンドライン
+### 詳細オプション
 
 ```bash
-# 食べログのみで東京都の飲食店50件を取得
-python restaurant_scraper_app.py --areas 東京都 --max-per-area 50
+# キーワード検索（ホットペッパー）
+python main.py --source hotpepper --areas 東京都 --keyword 居酒屋 --hotpepper-key YOUR_API_KEY
 
-# 複数地域で取得
-python restaurant_scraper_app.py --areas 東京都 大阪府 神奈川県 --max-per-area 100
+# 同時接続数と遅延時間の調整
+python main.py --areas 渋谷 --concurrent 20 --delay-min 0.5 --delay-max 2.0
 
-# ホットペッパーAPIも使用（APIキーが必要）
-python restaurant_scraper_app.py --areas 東京都 --hotpepper-key YOUR_API_KEY
+# Excel出力なしでJSONのみ保存
+python main.py --areas 渋谷 --no-excel
 
-# 出力ファイル名を指定
-python restaurant_scraper_app.py --areas 東京都 --output my_restaurant_list.xlsx
+# カスタム出力ファイル名
+python main.py --areas 渋谷 --output shibuya_restaurants
 ```
 
-### 高速版の使用（大量データ取得時）
+### エリア指定の例
+
+**食べログのエリア名（具体的なエリア）**
+- `渋谷`
+- `銀座・新橋・有楽町`
+- `新宿・代々木・大久保`
+- `池袋～高田馬場・早稲田`
+- `東京・丸の内・日本橋`
+
+**ホットペッパーのエリア名（都道府県または大エリア）**
+- `東京都`
+- `大阪府`
+- `神奈川県`
+
+### 環境変数による設定
 
 ```bash
-# 1000件の大量データを高速取得
-python restaurant_scraper_app_fast_v2.py --areas 東京都 --max-per-area 1000
+# ホットペッパーAPIキーを環境変数で設定
+export HOTPEPPER_API_KEY="YOUR_API_KEY"
+python main.py --source hotpepper --areas 東京都
 
-# 環境変数で詳細設定
-MAX_CONCURRENT=100 TIMEOUT=120 python restaurant_scraper_app_fast_v2.py --areas 東京都 --max-per-area 5000
+# その他の環境変数
+export MAX_CONCURRENT=50        # 最大同時接続数
+export DELAY_MIN=0.5           # 最小遅延秒数
+export DELAY_MAX=2.0           # 最大遅延秒数
+export LOG_LEVEL=DEBUG         # ログレベル
 ```
 
 ## 🔑 ホットペッパーAPIキーの取得
@@ -92,16 +115,21 @@ MAX_CONCURRENT=100 TIMEOUT=120 python restaurant_scraper_app_fast_v2.py --areas 
 ### Excelファイル構成
 
 **飲食店リストシート**
-- No: 連番
 - 店名: 店舗名
 - 電話番号: 連絡先電話番号
 - 住所: 店舗住所
 - ジャンル: 料理ジャンル
 - 最寄り駅: アクセス情報
 - 営業時間: 営業時間・定休日
-- データソース: 食べログ/ホットペッパー
+- 席数: 座席数（食べログのみ）
+- 公式URL: 公式サイト（食べログのみ）
+- 口コミ数: レビュー件数（食べログのみ）
+- 評価: 評価点（食べログのみ）
+- 予算（夜）: ディナー予算
+- 予算（昼）: ランチ予算（食べログのみ）
 - URL: 店舗詳細ページURL
-- 調査日: データ取得日
+- データソース: 食べログ/ホットペッパーグルメ
+- 取得日時: データ取得日時
 
 **サマリーシート**
 - 総件数
@@ -110,16 +138,23 @@ MAX_CONCURRENT=100 TIMEOUT=120 python restaurant_scraper_app_fast_v2.py --areas 
 - データソース別件数
 - 作成日時
 
-## 🎛️ オプション
+## 🎛️ コマンドラインオプション
 
 ```bash
---areas AREAS [AREAS ...]     # 対象地域（複数指定可）
---max-per-area MAX_PER_AREA   # 地域あたりの最大取得件数
---output OUTPUT, -o OUTPUT    # 出力ファイル名
---hotpepper-key HOTPEPPER_KEY # ホットペッパーAPIキー
---no-tabelog                  # 食べログを使用しない
---interactive, -i             # 対話モードで実行
---help, -h                    # ヘルプ表示
+--areas AREAS [AREAS ...]     # 対象エリア（複数指定可）
+--limit LIMIT                 # 取得する最大件数（デフォルト: 100）
+--pages PAGES                 # エリアごとの最大ページ数（デフォルト: 10）
+--concurrent CONCURRENT       # 最大同時接続数（デフォルト: 10）
+--delay-min DELAY_MIN        # 最小遅延秒数（デフォルト: 1.0）
+--delay-max DELAY_MAX        # 最大遅延秒数（デフォルト: 3.0）
+--source {tabelog,hotpepper,both}  # データソース（デフォルト: tabelog）
+--hotpepper-key KEY          # ホットペッパーAPIキー
+--keyword KEYWORD            # 検索キーワード（ホットペッパー用）
+--output OUTPUT              # 出力ファイル名（拡張子なし）
+--no-excel                   # Excel出力をスキップ
+--config CONFIG              # 設定ファイルのパス
+--debug                      # デバッグモードを有効化
+--help, -h                   # ヘルプ表示
 ```
 
 ## 🌍 対応地域
@@ -212,50 +247,64 @@ python setup.py
 
 このソフトウェアはMITライセンスの下で提供されています。
 
-## 🏗️ アーキテクチャ
-
-### リファクタリング版の構成
+## 🏗️ プロジェクト構成
 
 ```
 restaurant-scraper/
-├── config/              # 設定管理
-│   ├── constants.py     # 定数定義
-│   ├── settings.py      # 環境設定
-│   └── logging_config.py # ロギング設定
-├── scrapers/            # スクレイパー実装
-│   ├── base.py          # 基底スクレイパークラス
-│   └── async_scraper.py # 非同期スクレイパー
-├── utils/               # ユーティリティ
-│   ├── validators.py    # データバリデーション
-│   ├── error_handler.py # エラーハンドリング
-│   └── progress.py      # 進捗管理
-└── tests/               # テストコード
-
+├── src/                    # ソースコード
+│   ├── config/            # 設定管理
+│   │   ├── __init__.py
+│   │   ├── constants.py   # 定数定義
+│   │   └── settings.py    # 環境設定
+│   ├── extractors/        # データ抽出
+│   │   ├── __init__.py
+│   │   ├── base.py        # 基底抽出クラス
+│   │   └── tabelog.py     # 食べログ抽出ロジック
+│   ├── scrapers/          # スクレイパー実装
+│   │   ├── __init__.py
+│   │   ├── base.py        # 基底スクレイパー
+│   │   ├── tabelog.py     # 食べログスクレイパー
+│   │   └── hotpepper.py   # ホットペッパースクレイパー
+│   └── utils/             # ユーティリティ
+│       ├── __init__.py
+│       └── validators.py  # データバリデーション
+├── tests/                 # テストコード
+├── cache/                 # キャッシュディレクトリ
+├── output/                # 出力ディレクトリ
+├── logs/                  # ログディレクトリ
+├── archived_versions/     # 旧バージョンアーカイブ
+├── main.py               # メインエントリーポイント
+├── restaurant_data_integrator.py  # データ統合
+├── hotpepper_api_client.py       # ホットペッパーAPIクライアント
+├── requirements.txt      # 依存パッケージ
+├── setup.py             # セットアップスクリプト
+└── README.md            # このファイル
 ```
-
-詳細は[アーキテクチャドキュメント](docs/architecture.md)、[APIリファレンス](docs/api-reference.md)、[移行ガイド](docs/migration-guide.md)を参照してください。
 
 ## 🔄 更新履歴
 
-### v2.0.0 (2025-07-31)
+### v3.0.0 (2025-08-05)
+- ホットペッパーグルメ統合実装
+- データソース選択機能（食べログ/ホットペッパー/両方）
+- 重複データ自動除去機能
+- コマンドラインインターフェース刷新
+- プロジェクト構造の再編成
+
+### v2.1.0 (2025-08-04)
+- 口コミ数取得の修正
+- 席数・公式URL取得機能追加
+- データ品質統計の改善
+
+### v2.0.0 (2025-08-04)
 - 大規模リファクタリング実施
 - モジュール構造の改善
-- 型ヒントとバリデーション強化
-- 包括的なテストスイート追加
-- ドキュメントの整理と改善
-
-### v1.2.0 (2025-07-31)
-- 高速非同期版の実装（10倍速）
-- ジャンル抽出バグの修正
+- 非同期処理による高速化（10倍）
 - 進捗の永続化機能追加
-- エラーハンドリングの改善
 
-### v1.0.0 (2025-07-31)
+### v1.0.0 (2025-08-03)
 - 初回リリース
 - 食べログスクレイピング機能
-- ホットペッパーAPI連携
 - Excel出力機能
-- 対話モード実装
 
 ---
 

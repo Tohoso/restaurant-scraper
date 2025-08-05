@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from src.config.settings import get_settings
 from src.scrapers.tabelog import TabelogScraper
+from src.scrapers.hotpepper import HotPepperScraper
 from restaurant_data_integrator import RestaurantDataIntegrator
 
 # ロギング設定
@@ -35,7 +36,7 @@ def setup_logging(settings):
 def parse_arguments():
     """コマンドライン引数を解析"""
     parser = argparse.ArgumentParser(
-        description='食べログから飲食店情報を収集します'
+        description='食べログ・ホットペッパーから飲食店情報を収集します'
     )
     
     parser.add_argument(
@@ -103,6 +104,25 @@ def parse_arguments():
         help='デバッグモードを有効化'
     )
     
+    parser.add_argument(
+        '--source',
+        choices=['tabelog', 'hotpepper', 'both'],
+        default='tabelog',
+        help='データソース（デフォルト: tabelog）'
+    )
+    
+    parser.add_argument(
+        '--hotpepper-key',
+        type=str,
+        help='ホットペッパーAPIキー'
+    )
+    
+    parser.add_argument(
+        '--keyword',
+        type=str,
+        help='検索キーワード（ホットペッパー用）'
+    )
+    
     return parser.parse_args()
 
 
@@ -160,10 +180,18 @@ def print_statistics(results):
     with_official = sum(1 for r in results if r.get('official_url'))
     with_reviews = sum(1 for r in results if r.get('review_count') and r['review_count'] != '0')
     
+    # ソース別統計
+    tabelog_count = sum(1 for r in results if r.get('source') == '食べログ')
+    hotpepper_count = sum(1 for r in results if r.get('source') == 'ホットペッパーグルメ')
+    
     print("\n" + "="*50)
     print("データ品質統計")
     print("="*50)
     print(f"総件数: {total}件")
+    if tabelog_count > 0:
+        print(f"  食べログ: {tabelog_count}件")
+    if hotpepper_count > 0:
+        print(f"  ホットペッパー: {hotpepper_count}件")
     print(f"電話番号: {with_phone}件 ({with_phone/total*100:.1f}%)")
     print(f"住所: {with_address}件 ({with_address/total*100:.1f}%)")
     print(f"ジャンル: {with_genre}件 ({with_genre/total*100:.1f}%)")
@@ -196,21 +224,58 @@ async def main():
     
     logger.info("Restaurant Scraper 起動")
     logger.info(f"設定: {settings.config}")
+    logger.info(f"データソース: {args.source}")
+    
+    results = []
     
     # スクレイパーを初期化
     scraper_config = settings.get_scraper_config()
     
-    async with TabelogScraper(**scraper_config) as scraper:
-        # スクレイピング実行
-        results = await scraper.scrape(
-            areas=args.areas,
-            max_pages_per_area=args.pages,
-            total_limit=args.limit
-        )
+    # 食べログから取得
+    if args.source in ['tabelog', 'both']:
+        logger.info("\n=== 食べログから取得開始 ===")
+        async with TabelogScraper(**scraper_config) as scraper:
+            # スクレイピング実行
+            tabelog_results = await scraper.scrape(
+                areas=args.areas,
+                max_pages_per_area=args.pages,
+                total_limit=args.limit if args.source == 'tabelog' else args.limit // 2
+            )
+            results.extend(tabelog_results)
+    
+    # ホットペッパーから取得
+    if args.source in ['hotpepper', 'both']:
+        # APIキーの確認
+        api_key = args.hotpepper_key or settings.get('hotpepper_api_key')
+        if not api_key or api_key == 'YOUR_API_KEY_HERE':
+            logger.warning("ホットペッパーAPIキーが設定されていません")
+            if args.source == 'hotpepper':
+                logger.error("ホットペッパーのみ指定時はAPIキーが必須です")
+                return
+        else:
+            logger.info("\n=== ホットペッパーから取得開始 ===")
+            async with HotPepperScraper(api_key=api_key, **scraper_config) as scraper:
+                # スクレイピング実行
+                hp_results = await scraper.scrape(
+                    areas=args.areas,
+                    max_per_area=args.pages * 20,  # 1ページ20件相当
+                    total_limit=args.limit if args.source == 'hotpepper' else args.limit // 2,
+                    keyword=args.keyword
+                )
+                results.extend(hp_results)
     
     if not results:
         logger.warning("データが取得できませんでした")
         return
+    
+    # 重複除去（両方から取得した場合）
+    if args.source == 'both':
+        # RestaurantDataIntegratorを使用して重複を除去
+        integrator = RestaurantDataIntegrator()
+        integrator.add_restaurants(results)
+        integrator.remove_duplicates()
+        results = integrator.restaurants
+        logger.info(f"重複除去後: {len(results)}件")
     
     logger.info(f"取得完了: {len(results)}件")
     
